@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Self</string>
+    <string name="gratefulText">What are you grateful for today?</string>
+    <string name="get_started">Get Started</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="or_text">Or</string>
+    <string name="login_text">LOGIN</string>
+    <string name="create_account_text">Create Account</string>
+</resources>
