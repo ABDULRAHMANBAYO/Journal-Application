@@ -24,7 +24,7 @@
 
         <EditText
             android:id="@+id/username_account"
-            android:hint="Username"
+            android:hint="@string/username_text"
             android:inputType="textPersonName"
             android:maxLines="1"
             android:paddingBottom="16dp"
