@@ -7,4 +7,5 @@
     <string name="or_text">Or</string>
     <string name="login_text">LOGIN</string>
     <string name="create_account_text">Create Account</string>
+    <string name="username_text">Username</string>
 </resources>
