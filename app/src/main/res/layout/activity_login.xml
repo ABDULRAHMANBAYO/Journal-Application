@@ -64,7 +64,7 @@
         </TextView>
 
         <Button
-            android:id="@+id/create_account_button"
+            android:id="@+id/create_account_button_login"
             android:textColor="@color/colorAccent"
             android:background="@android:color/transparent"
             android:textStyle="bold"
