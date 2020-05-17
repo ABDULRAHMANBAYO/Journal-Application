@@ -158,6 +158,7 @@ public class CreateAccountActivity extends AppCompatActivity {
                                         }).addOnFailureListener(new OnFailureListener() {
                                     @Override
                                     public void onFailure(@NonNull Exception e) {
+                                        progressBar.setVisibility(View.INVISIBLE);
                                         Toast.makeText(getApplicationContext(), "Add users detail:failure: " + e.toString(), Toast.LENGTH_SHORT)
                                                 .show();
 
@@ -171,6 +172,7 @@ public class CreateAccountActivity extends AppCompatActivity {
 //                                    updateUI(user);
                             } else {
                                 // If sign in fails, display a message to the user.
+                                progressBar.setVisibility(View.INVISIBLE);
                                 Toast.makeText(getApplicationContext(), "createUserWithEmail:failure: " + task.getException(), Toast.LENGTH_SHORT)
                                         .show();
 //                                    Log.w(TAG, "createUserWithEmail:failure", task.getException());
@@ -183,6 +185,7 @@ public class CreateAccountActivity extends AppCompatActivity {
                     }).addOnFailureListener(new OnFailureListener() {
                 @Override
                 public void onFailure(@NonNull Exception e) {
+                    progressBar.setVisibility(View.INVISIBLE);
                     Toast.makeText(getApplicationContext(), "createUserWithEmail:failure: " + e.toString(), Toast.LENGTH_SHORT)
                             .show();
 
