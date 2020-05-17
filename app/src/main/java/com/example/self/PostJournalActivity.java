@@ -68,6 +68,8 @@ public class PostJournalActivity extends AppCompatActivity implements View.OnCli
         saveButton.setOnClickListener(this);
         addPhotoButton.setOnClickListener(this);
 
+        progressBar.setVisibility(View.INVISIBLE);
+
 
         // Get user details
         if (JournalApi.getInstance() != null) {
@@ -97,6 +99,7 @@ public class PostJournalActivity extends AppCompatActivity implements View.OnCli
                 break;
             case R.id.postCameraButton:
                 //Get image from  gallery
+
 
                 Intent  galleryIntent = new Intent(Intent.ACTION_GET_CONTENT);
                 galleryIntent.setType("image/*");
