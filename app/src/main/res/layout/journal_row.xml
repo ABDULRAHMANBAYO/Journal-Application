@@ -7,10 +7,11 @@
 
     android:layout_height="wrap_content">
     <LinearLayout
-
+android:background="@color/centerGColor"
+        android:alpha="0.7"
         android:elevation="10dp"
         android:orientation="horizontal"
-        android:gravity="right"
+        android:gravity="end"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <TextView

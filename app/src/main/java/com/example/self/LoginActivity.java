@@ -30,6 +30,8 @@ import com.google.firebase.firestore.FirebaseFirestoreException;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
 
+import java.util.Objects;
+
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
     private Button loginButton, createAccountButtonLogin;
     private AutoCompleteTextView emailAddress;
@@ -46,6 +48,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        Objects.requireNonNull(getSupportActionBar()).setElevation(0);
 
         firebaseAuth = FirebaseAuth.getInstance();
         loginButton = findViewById(R.id.email_sign_in_button);
@@ -79,7 +82,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             FirebaseUser user = firebaseAuth.getCurrentUser();
                             assert user != null;
-                            final String currentUserId = user.getUid();
+                           String currentUserId = user.getUid();
 
                             collectionReference
                                     .whereEqualTo("userId", currentUserId)
