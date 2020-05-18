@@ -1,4 +1,4 @@
-package com.example.self.utils;
+package utils;
 
 import android.app.Application;
 

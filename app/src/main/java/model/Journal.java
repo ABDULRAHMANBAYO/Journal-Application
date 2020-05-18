@@ -1,4 +1,4 @@
-package com.example.self.model;
+package model;
 
 import com.google.firebase.Timestamp;
 
