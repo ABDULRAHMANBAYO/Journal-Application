@@ -8,4 +8,7 @@
     <string name="login_text">LOGIN</string>
     <string name="create_account_text">Create Account</string>
     <string name="username_text">Username</string>
+    <string name="menu_title">Add Thoughts</string>
+    <string name="signout">Signout</string>
+    <string name="no_thoughts_hint">Write a Journal Entry By clicking the "+" icon  above</string>
 </resources>
