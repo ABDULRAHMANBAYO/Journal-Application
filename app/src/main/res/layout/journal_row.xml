@@ -6,6 +6,34 @@
     android:layout_margin="5dp"
     android:layout_height="wrap_content">
     <LinearLayout
+
+        android:elevation="10dp"
+        android:orientation="horizontal"
+        android:gravity="right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/journal_row_username"
+            android:layout_weight="9"
+            android:text="Name"
+            android:padding="3dp"
+            android:textSize="17sp"
+            android:gravity="start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <ImageButton
+            android:id="@+id/journal_row_share_button"
+            android:src="@android:drawable/ic_menu_share"
+            android:background="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </ImageButton>
+
+    </LinearLayout>
+    <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">

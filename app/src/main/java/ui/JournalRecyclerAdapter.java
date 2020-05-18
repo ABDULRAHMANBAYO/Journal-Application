@@ -54,7 +54,7 @@ public class JournalRecyclerAdapter extends RecyclerView.Adapter<JournalRecycler
         holder.title.setText(journal.getTitle());
         holder.thought.setText(journal.getThought());
         holder.dateAdded.setText(timeAgo);
-//        holder.name.setText(journal.getUserName(););
+        holder.name.setText(journal.getUserName());
 
 
 
@@ -79,7 +79,7 @@ public class JournalRecyclerAdapter extends RecyclerView.Adapter<JournalRecycler
             thought = itemView.findViewById(R.id.journal_thought_list);
             dateAdded = itemView.findViewById(R.id.journal_timestamp_list);
             imageView = itemView.findViewById(R.id.journal_image_list);
-//            name = itemView.findViewById(R.id.username_account);
+            name = itemView.findViewById(R.id.journal_row_username);
         }
     }
 }
